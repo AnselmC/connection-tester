@@ -11,7 +11,8 @@ Currently, only email notification is possible.
 git clone https://github.com/AnselmC/connection-tester.git
 pip install -r connectiontester/requirements.txt
 ```
-To go ahead and update the `settings.py` file with your SMTP mail connection, the address(es) you want to send the notification to, and possibly a different message.
+To go ahead and create a `settings.py` file with same format as
+`dummy_settings.py` with your SMTP mail connection, the address(es) you want to send the notification to, and possibly a different message.
 To write your own message, include the following formatting keys and consider their meaning:
  - `up`: The upload speed of your contract
  - `down`: The download speed of your contract
@@ -23,7 +24,7 @@ To write your own message, include the following formatting keys and consider th
  - `runs`: The total amount of runs
 
 Finally, run:
-``
+```
 python connectiontester/setup.py install
 ```
 
