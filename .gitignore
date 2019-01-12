@@ -1,0 +1,8 @@
+/build
+/dist
+/*.egg-info
+/env
+*.pyc
+.DS_Store
+app.log
+/settings.py
